@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" action="bt cuối khóa.html"onsubmit="return validateForm()"method="post">
+        <p>name:</p>
+        <input type="text" id="name" />
+        <p>mật khẩu:</p>
+        <input type="text" id="matkhau">
+        <button onclick="printName()">submit</button>
+        <p id="print"></p>
+    </form>
+        
+    <script>
+        function validateForm() {
+        let x = document.forms["myForm"]["matkhau"].value;
+        if (x.length == 0) {
+          alert("Email must be filled out");
+          return false;
+        }
+        
+        if (x.length > 6) {
+            alert("Email no longer than 6 words")
+            return false
+        }
+        let matkhau=document.forms["myForm"]["matkhau"].value
+        if (matkhau=="2000"){
+            return true
+       }
+       else{
+        alert("password not correct, please re-enter")
+       }
+       return false
+      }
+      
+    </script>
+</body>
+</html>
+ 

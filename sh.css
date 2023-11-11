@@ -1,0 +1,56 @@
+*{margin: 0px;}
+.Human{
+    display: flex; 
+    width: 100vw;
+    height: 100vh;
+}
+.Head{
+    flex-direction: column;
+    width: 100vw;
+    height: 30vh;
+    text-align: center;
+    padding-top: 75px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+}
+.Body{
+    flex-direction: column;
+    width:100vw;
+    height: 70vh;
+    background-color: red;
+    position: relative;
+    bottom: -30vh;
+}
+.box1{
+    height: 70vh;
+    width: 30vw;
+    flex-direction: column;
+    margin-left:100px ;
+}
+.box2{
+    height: 70vh;
+    width: 30vw;
+    flex-direction: column;
+    position: relative;
+    left:45vw;
+    bottom: 70vh;
+}
+.box3{
+    height: 70vh;
+    width: 30vw;
+    flex-direction: column;
+    position: relative;
+    left:90vw;
+    bottom: 140vh;
+}
+hr{
+    color: rgb(0, 68, 255);
+    left: 100px;
+    
+}
+img{
+    object-fit: fill;
+    height: 100px;
+    width: 100px;
+}
+
